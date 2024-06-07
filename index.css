@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+TC&display=swap');
+*{
+    background-color: #ccc;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+    font-family: "LXGW WenKai TC", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.iron{
+    animation: move 3s linear infinite;
+}
+
+div.iron img{
+    width: 200px;
+    height: 200px;
+}
+
+.name{
+    font-size: 5rem;
+    font-weight: 700;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+
+}
+
+.contact{
+    font-size: 16px;
+}
+
+.name, .contact{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+@keyframes move{
+    0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-25px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+}
+
+@media only screen and (max-width: 960px){
+    div.iron img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .name{
+        font-size: 2rem;
+    }
+}
